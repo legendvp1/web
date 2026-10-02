@@ -1,0 +1,8 @@
+body { font-family: system-ui, sans-serif; margin: 2rem; color: #222; }
+.controls { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+input { width: 5rem; }
+button { padding: .4rem .9rem; cursor: pointer; }
+table { border-collapse: collapse; margin-top: 1rem; }
+th, td { border: 1px solid #bbb; padding: .3rem .6rem; text-align: right; }
+th:nth-child(-n+2), td:nth-child(-n+2) { text-align: left; }
+#sandbox { position: absolute; left: -9999px; top: 0; width: 300px; }

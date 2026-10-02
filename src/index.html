@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторная работа №7</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Михайлец Владислав Павлович - Лабораторная работа №7</h1>
+  <p>Группа 251-3210. Тема: производительность добавления и удаления элементов в DOM.</p>
+  <div class="controls">
+    <label>Итераций: <input id="iterations" type="number" value="30" min="30" /></label>
+    <label>Прогрев: <input id="warmup" type="number" value="5" min="0" /></label>
+    <button id="run" type="button">Запустить тесты</button>
+    <button id="copy" type="button" disabled>Скопировать Markdown</button>
+  </div>
+  <p id="status">Готово к запуску. Рекомендуется режим «Инкогнито» без расширений.</p>
+  <table id="results">
+    <thead>
+      <tr>
+        <th>Операция</th><th>Метод</th><th>N элементов</th><th>Повторений</th>
+        <th>Среднее, мс</th><th>σ, мс</th><th>ДИ 95%, мс</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="sandbox" aria-hidden="true"></div>
+  <script src="js/benchmark.js"></script>
+</body>
+</html>
