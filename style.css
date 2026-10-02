@@ -1,0 +1,40 @@
+dialog {
+  width: min(32rem, 95vw);
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 30%);
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+
+.field {
+  margin-bottom: 0.75rem;
+}
+
+.error {
+  min-height: 1.5em;
+  margin: 0.25rem 0 0;
+  color: #b00020;
+  font-size: 0.875rem;
+}
+
+.form-control:user-valid {
+  border-color: #198754;
+}
+
+.form-control:user-invalid,
+.form-control[aria-invalid="true"] {
+  border-color: #b00020;
+  background-color: #fff0f0;
+}
+
+.field:has(.form-control[aria-invalid="true"]) .form-label {
+  color: #b00020;
+}
+
+.user-card {
+  border-left: 4px solid #0d6efd;
+}
